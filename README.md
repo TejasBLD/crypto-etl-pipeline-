@@ -15,18 +15,26 @@ A simple Python ETL (Extract, Transform, Load) pipeline that fetches cryptocurre
 
 ## Installation
 
-Clone the repository:
+1.Clone the repository:
 ```bash
 git clone https://github.com/TejasBLD/crypto-etl-pipeline-.git
 cd crypto-etl-pipeline-
 ```
-Install dependencies:
+2.Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-Create and configure .env:
+3.Create and configure .env:
 ```bash
 cp .env.example .env
 ```
+4.Update the .env file with your own database credentials.
 
-Update the .env file with your own database credentials.
+5.Usage
+
+Run the ETL pipeline:
+```bash
+python load.py
+```
+Fetches, transforms, and loads the data into your PostgreSQL database.
+Check the table crypto_prices to verify the data.
