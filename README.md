@@ -13,9 +13,20 @@ A simple Python ETL (Extract, Transform, Load) pipeline that fetches cryptocurre
 
 ---
 
-## Dependencies
+## Installation
 
-Install the required Python packages using `requirements.txt`:
-
+Clone the repository:
+```bash
+git clone https://github.com/TejasBLD/crypto-etl-pipeline-.git
+cd crypto-etl-pipeline-
+```
+Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+Create and configure .env:
+```bash
+cp .env.example .env
+```
+
+Update the .env file with your own database credentials.
