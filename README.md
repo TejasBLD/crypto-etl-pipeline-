@@ -34,6 +34,7 @@ cp .env.example .env
 
 Run the ETL pipeline:
 ```bash
+python extract.py
 python load.py
 ```
 Fetches, transforms, and loads the data into your PostgreSQL database.
